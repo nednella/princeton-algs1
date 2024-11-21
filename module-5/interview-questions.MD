@@ -2,6 +2,8 @@
 
 Given two arrays **_a[]_** and **_b[]_**, each containing **_n_** distinct 2D points in the plane, design a subquadratic algorithm to count the number of points that are contained both in array **_a[]_** and **_b[]_**.
 
+**_Hint:_** shellsort (or any other subquadratic sort).
+
 ```
 
 ```
@@ -9,6 +11,8 @@ Given two arrays **_a[]_** and **_b[]_**, each containing **_n_** distinct 2D po
 ## Permutation
 
 Given two integer arrays of size **_n_**, design a subquadratic algorithm to determine whether one is a permutation of the other. That is, do they contain exactly the same entries but, possibly, in a different order.
+
+**_Hint:_** sort both arrays.
 
 ```
 
@@ -26,6 +30,8 @@ The performance requirements are as follows:
 -   At most **_n_** calls to **_colour()_**.
 -   At most **_n_** calls to **_swap()_**.
 -   Constant extra space.
+
+**_Hint:_** 3-way partitioning.
 
 ```
 

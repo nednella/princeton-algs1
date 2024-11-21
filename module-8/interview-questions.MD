@@ -2,6 +2,8 @@
 
 Design a data type that supports **_insert_** in logarithmic time, **_find-the-median_** in constant time, and **_remove-the-median_** in logarithmic time. If the number of keys in the data type is even, find/remove the **_lower median_**.
 
+**_Hint:_** maintain two binary heaps, one that is max-oriented and one that is min-oriented.
+
 ```
 
 ```
@@ -9,6 +11,8 @@ Design a data type that supports **_insert_** in logarithmic time, **_find-the-m
 ## Randomised priority queue
 
 Describe how to add the methods **_sample()_** and **_delRandom()_** to our binary heap implementation. The two methods return a key that is chosen uniformly at random among the remaining keys, with the latter method also removing that key. the **_sample()_** method should take constant time; the **_delRandom()_** key should take logarithmic time. Do not worry about resizing the underlying array.
+
+**_Hint:_** use sink() and swim().
 
 ```
 
@@ -20,6 +24,11 @@ A **_taxicab_** number is an integer that can be expressed as the sum of two cub
 
 -   Version 1: use time proportional to **_n^2 log n_** and space proprotional to **_n^2_**
 -   Version 2: use time proportional to **_n^2 log n_** and space proprotional to **_n_**
+
+**_Hints:_**
+
+-   Version 1: form the sums a^3 + b^3 and sort.
+-   Version 2: use a min-oriented priority queue with n items.
 
 ```
 
